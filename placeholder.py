@@ -123,7 +123,7 @@ def main():
     width = input("Enter the width of the placeholder: ")
     height = input("Enter the height of the placeholder : ")
 
-    r = requests.get(f"{PLACEHOLDER_URL}/{width}x{height}")
+    r = requests.get(f"https://via.placeholder.com/150x250")
 
     # Parse HTML Code
     soup = BeautifulSoup(r.text, "html.parser")
